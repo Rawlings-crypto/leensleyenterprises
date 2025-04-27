@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leensley Enterprises - Import Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo">
+            <h1>Leensley Enterprises</h1>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="login-btn">Login</a></li>
+                <li><a href="#register" class="register-btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Quality Imports from China</h1>
+                <p>Your trusted partner for agricultural products, electronics, utensils, clothing, and farming equipment</p>
+                <a href="#products" class="cta-button">Explore Products</a>
+            </div>
+        </section>
+
+        <!-- Product Categories Section -->
+        <section id="products" class="product-section">
+            <h2>Our Product Categories</h2>
+            <div class="product-categories">
+                <div class="category-card">
+                    <div class="category-img" id="agricultural-img"></div>
+                    <h3>Agricultural Products</h3>
+                    <p>High-quality seeds, fertilizers, and agricultural supplies</p>
+                    <button class="view-products" data-category="agricultural">View Products</button>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" id="electronics-img"></div>
+                    <h3>Electronics</h3>
+                    <p>Modern electronics at competitive prices</p>
+                    <button class="view-products" data-category="electronics">View Products</button>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" id="utensils-img"></div>
+                    <h3>Utensils</h3>
+                    <p>Kitchen and home utensils for all your needs</p>
+                    <button class="view-products" data-category="utensils">View Products</button>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" id="clothing-img"></div>
+                    <h3>Clothing</h3>
+                    <p>Quality clothing for all ages and occasions</p>
+                    <button class="view-products" data-category="clothing">View Products</button>
+                </div>
+                <div class="category-card">
+                    <div class="category-img" id="farming-tools-img"></div>
+                    <h3>Farming Tools & Machinery</h3>
+                    <p>Modern farming equipment to enhance productivity</p>
+                    <button class="view-products" data-category="farming-tools">View Products</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="featured-products-container">
+                <!-- Products will be loaded dynamically via JavaScript -->
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <h2>About Leensley Enterprises</h2>
+            <div class="about-content">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <p>Founded in 2015, Leensley Enterprises has grown to become one of Kenya's premier importers of quality products from China. Based in Nairobi, we specialize in providing agricultural products, electronics, utensils, clothing, and farming tools to businesses and individuals across East Africa.</p>
+                    <p>Our mission is to bridge the gap between Chinese manufacturers and African markets, ensuring our customers receive high-quality products at competitive prices. We pride ourselves on our rigorous quality control processes and our commitment to excellent customer service.</p>
+                    <p>With a dedicated team of procurement specialists and logistics experts, we ensure smooth and timely delivery of all imported goods. Our extensive network of suppliers in China allows us to source almost any product our customers need.</p>
+                    <p>Leensley Enterprises is committed to supporting Kenya's economic growth by providing affordable tools and equipment that enhance productivity across various sectors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <p>0114751500</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@leensleyenterprises.com</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Leensley Enterprises</h3>
+                <p>Your trusted partner for quality imports from China</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: 0114751500</p>
+                <p>Email: info@leensleyenterprises.com</p>
+                <p>Location: Nairobi, Kenya</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Leensley Enterprises. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <p class="form-footer">Don't have an account? <a href="#" id="switchToRegister">Register</a></p>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Phone</label>
+                    <input type="tel" id="registerPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            <p class="form-footer">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
